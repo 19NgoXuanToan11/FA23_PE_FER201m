@@ -17,7 +17,6 @@ export default function AllPlayers() {
     const getPlayers = async () => {
         try {
             const response = await axios.get("https://65458a1ffe036a2fa9546451.mockapi.io/students");
-            
             setPlayers(response.data);
         } catch (error) {
             if (axios.isAxiosError(error)) {
