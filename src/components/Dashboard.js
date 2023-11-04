@@ -108,7 +108,7 @@ export default function Dashboard() {
                                 <StyledTableCell>{row.name}</StyledTableCell>
                                 <StyledTableCell>{row.dateofbirth}</StyledTableCell>
                                 <StyledTableCell>{row.class}</StyledTableCell>
-                                <StyledTableCell><img src={row.image} alt={row.name} style={{maxWidth: "50px"}}/></StyledTableCell>
+                                <StyledTableCell><img src={row.image} alt={row.name} style={{maxWidth: "200px"}}/></StyledTableCell>
                                 <StyledTableCell>
                                     <ChangeCircleIcon style={{cursor: "pointer"}}/>
                                     <DeleteForeverIcon style={{cursor: "pointer"}} onClick={() => {setId(row.id); setOpen(true);}}/>

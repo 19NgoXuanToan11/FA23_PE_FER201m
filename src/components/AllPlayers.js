@@ -44,7 +44,7 @@ export default function AllPlayers() {
                     <TableRow>
                         <TableCell>ID</TableCell>
                         <TableCell>Name</TableCell>
-                        <TableCell>Date of Birth</TableCell>
+                        <TableCell>DateOfBirth</TableCell>
                         <TableCell align="right">Class</TableCell>
                         <TableCell align="right">Image</TableCell>
                     </TableRow>
@@ -57,7 +57,7 @@ export default function AllPlayers() {
                             <TableCell>{player.name}</TableCell>
                             <TableCell>{player.dateofbirth}</TableCell>
                             <TableCell align="right" style={{color: "red"}}>{player.class}</TableCell>
-                            <TableCell align="right"><img src={player.image} alt={player.name} style={{maxWidth: "50px"}}/></TableCell>
+                            <TableCell align="right"><img src={player.image} alt={player.name} style={{maxWidth: "200px"}}/></TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
